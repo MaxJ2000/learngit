@@ -1,9 +1,9 @@
 *{
-    box-sizing: border-box;
-    font-family: Arial, serif;
-     padding: 0;
-    margin: 5px;
-    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    list-style: none outside none;
+    text-decoration:none;
 }
 .flex-container{
     display: flex;
@@ -14,11 +14,15 @@
     flex-direction: row;
     flex:0
 }
-
+.header{
+    margin: 5px;
+}
 .body{
     display: flex;
     flex-direction: row;
-    flex:1
+    flex:1;
+    margin: 0;
+    padding:0;
 }
 .left {
     flex:0 0 70px;
@@ -45,9 +49,20 @@ height: 40px;
 .button{
    width: 60px;
     height:40px;
-    background-image: url("search-button.png");
+    background-image: url("file/search-button.png");
     background-size: 55px;
     padding: 0;
     border: black;
-    vertical-align: middle;
+    vertical-align: middle;/*让搜索图标和input对齐*/
+}
+.segmentation{
+    height: 10px;
+    background: goldenrod;
+}
+.body-nav img{
+    width:75px;
+    display: inline;
+}
+.left ul{
+    font-size: 0;/*去掉导航栏的空格*/
 }
