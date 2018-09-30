@@ -1,0 +1,63 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.header,.footer{
+    display: flex;
+    flex-direction: row;
+    flex:0
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    flex:1
+}
+.left,.right {
+    flex:0 0 180px;
+}
+.center{
+    flex:1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-icon{
+    background: red;
+}
+.header-hyperlink{
+    background-color:blue;
+}
+.header-search{
+    background-color:yellow;
+}
+.body-nav{
+    background: pink;
+}
+.body-main{
+    background: aqua;
+}
+.body-news{
+    background: gray;
+}
+.footer-icon{
+    background: blueviolet;
+}
+.footer-information{
+    background: chartreuse;
+}
+.footer-job {
+    background: papayawhip;
+}
