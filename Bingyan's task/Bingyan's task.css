@@ -150,11 +150,108 @@ button:hover,button:active{
     color: white;
     vertical-align: middle;
 }
-.footer-first-right p{
+.footer-first-right{
+    display: flex;
     background: RGB(167,167,167);
-    padding: 25px;
-    margin: auto;
+}
+.footer-first-right p{
+    margin: auto 20px;
     height: 70px;/*做的不够好，强行凑出来的*/
     font-weight: lighter;
 }
-
+.footer-second{
+    height: 90px;
+}
+.footer-second-left{
+    background:RGB(24,24,24) ;
+}
+.footer-second-center{
+background: rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+}
+.footer-second-center  a{
+    margin: auto 50px auto auto;
+    width: 450px;
+}
+.footer-second-right{
+    background: rgb(42,42,42);
+    display: flex;
+}
+.footer-second-right a{
+    color: white;
+    font-weight: lighter;
+    margin:auto 20px;
+}
+.footer-second-right a strong{
+    color: rgb(227,151,22);
+}
+.footer-third{
+   height:389px;
+}
+.footer-third-left img{
+    width:95px;
+}
+.footer-third-center{
+    display: flex;
+}
+.sponsor{
+    background: rgb(212,212,212);
+    flex: 1;
+}
+.sponsor p{
+    padding: 35px 200px 0 40px;
+    font-weight: lighter;
+}
+.sponsor p a{
+    font-weight: bolder;
+}
+.sponsor >a{
+    padding: 35px 200px 0 40px;
+}
+.sponsor >a:link,.sponsor >a:visited{
+    color: rgb(103,169,242);
+}
+.sponsor >a:hover{
+    color: rgb(54,54,54);
+}
+.adv{
+    height:150px;
+    color: rgb(54,54,54);
+    background: rgb(190,190,190);
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.adv li{
+    display: inline;
+    padding: 10px 120px 0 20px;
+    float: left;
+}/*什么时候导航栏用ul，什么时候直接div啊啊啊啊啊，搞不懂*/
+.footer-third-right{
+    display: flex;
+}
+.footer-third-right h4{
+    margin: 20px auto 20px 20px;
+}
+.footer-third-right ul{
+    margin: 0 60px 20px 20px;
+    font-size: 90%;
+}
+.footer-third-right{
+    display: flex;
+}
+.button-wrap a{
+    margin: 5px auto 0 20px;/*这一段margin效果感觉很奇怪*/
+    width: 200px;
+    display: block;/*我个智障，行内元素不能设置高度*/
+    text-align: center;
+    height: 25px;
+    color: white;
+}
+.button-wrap a:link{
+    background: rgb(145,176,237);
+}
+.button-wrap a:hover{
+    background: black;
+}
