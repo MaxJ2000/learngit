@@ -246,13 +246,14 @@ background: rgb(0,0,0);
     color: rgb(86,86,86);
     font-weight: bold;
 }
-.adv li{
-    padding: 10px 170px 0 20px;
-    display:inline;
-}/*什么时候导航栏用ul，什么时候直接div啊啊啊啊啊，搞不懂*/
-.adv li a:hover,.adv li a:active,.sponsor p a:hover{
+/*什么时候导航栏用ul，什么时候直接div啊啊啊啊啊，搞不懂*/
+.adv a:hover,.adv a:active,.sponsor p a:hover{
     font-weight: 900;
     color: black;
+}
+.adv div{
+    width: 30%;
+    margin: 10px auto 5px 10px;
 }
 .footer-third-right{
     display: flex;
@@ -281,3 +282,15 @@ background: rgb(0,0,0);
 .button-wrap a:hover{
     background: black;
 }
+.absolutely{
+    position:absolute;
+    left:85px;
+    bottom: -1080px;
+    display: none;
+}/*配数字出来的，我也不懂为什么是这样*/
+.absolutely img{
+    width: 35%;
+}
+.footer-contact-link:hover .absolutely{
+    display: block;
+}/*奥义，不用动画直接absolute定位怼脸上法*/
