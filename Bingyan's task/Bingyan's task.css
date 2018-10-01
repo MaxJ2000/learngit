@@ -5,6 +5,12 @@
     list-style: none outside none;
     text-decoration:none;
 }
+a:link ,a:visited{
+    color: black;
+}
+a:hover ,a:active{
+    color: skyblue;
+}
 .flex-container{
     display: flex;
     flex-direction: column;
@@ -15,7 +21,7 @@
     flex:0
 }
 .header{
-    margin: 5px;
+    margin: 10px;
 }
 .body{
     display: flex;
@@ -23,9 +29,10 @@
     flex:1;
     margin: 0;
     padding:0;
+    border: 0;
 }
 .left {
-    flex:0 0 70px;
+    flex:0 0 95px;
 }
 .right{
  flex:0 0 350px;
@@ -36,7 +43,7 @@
 .header-icon img{
     width: 40px;
     height:40px;
-    margin: 0 20px 0 20px;
+    margin: 6px 20px 0 20px;
 }
 .header-hyperlink a{
     font-size: 40px;
@@ -57,12 +64,97 @@ height: 40px;
 }
 .segmentation{
     height: 10px;
-    background: goldenrod;
+    background: RGB(227,151,22);
 }
-.body-nav img{
-    width:75px;
+.body-nav img {
+    width: 95px;
     display: inline;
+}
+.body-nav{
+    background: RGB(24,24,24);
 }
 .left ul{
     font-size: 0;/*去掉导航栏的空格*/
 }
+.body-news{
+    background: RGB(95,95,95);
+}
+.body-news div{
+    margin: 20px;
+    background: white;
+    padding:20px;
+}
+.body-news div h3{
+    font-size: 28px;
+    font-weight: 900;
+}
+.body-news div p{
+    font-size:14px;
+    font-weight: lighter;
+    color: black;
+}
+.body-news button{
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background: RGB(145,176,237);
+}
+button:hover,button:active{
+    background: black;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer-first,.footer-second,.footer-third{
+    display: flex;
+    flex-direction: row;
+}
+.footer-third-left,.footer-third-center,.footer-third-right{
+    display: flex;
+    flex-direction: column;
+}
+.footer-first{
+    height: 120px;
+}
+.footer-first-left{
+    background: RGB(44,44,44);
+}
+.footer-first-center{
+    background: RGB(57,57,57);
+    display: flex;
+    justify-content: space-between;
+}
+.footer-first-center img{
+    height: 60px;
+    padding: auto;
+    margin: auto auto auto 30px;
+}
+.footer-first-center input{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 40px;
+    width: 250px;
+    background:white url("file/e-mail.png") no-repeat;
+    background-size: 50px;
+    font-size: 25px;
+    padding-left: 50px;
+}
+.footer-first-center button{
+    margin: auto 50px auto 20px;/*还是搞不懂margin是啥，为什么能这么玩*/
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+    background: RGB(145,176,237);
+    color: white;
+    vertical-align: middle;
+}
+.footer-first-right p{
+    background: RGB(167,167,167);
+    padding: 25px;
+    margin: auto;
+    height: 70px;/*做的不够好，强行凑出来的*/
+    font-weight: lighter;
+}
+
