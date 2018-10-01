@@ -76,6 +76,25 @@ height: 40px;
 .left ul{
     font-size: 0;/*去掉导航栏的空格*/
 }
+.body-main{
+    background: rgb(41,41,42);
+    display: flex;
+    flex-direction: column;
+}
+.body-main-top{
+    background: url("file/body-main.png") repeat-x;
+    height: 170px;
+    flex:none;
+    color: white;
+}
+.body-main-top h2{
+    margin: 30px auto 0 30px;
+    font-size: 60px;
+}
+.body-main-top p{
+    font-size:20px;
+    margin-left: 30px;
+}
 .body-news{
     background: RGB(95,95,95);
 }
@@ -223,11 +242,18 @@ background: rgb(0,0,0);
     display: flex;
     flex-wrap: wrap;
 }
+.sponsor p a:link{
+    color: rgb(86,86,86);
+    font-weight: bold;
+}
 .adv li{
-    display: inline;
-    padding: 10px 120px 0 20px;
-    float: left;
+    padding: 10px 170px 0 20px;
+    display:inline;
 }/*什么时候导航栏用ul，什么时候直接div啊啊啊啊啊，搞不懂*/
+.adv li a:hover,.adv li a:active,.sponsor p a:hover{
+    font-weight: 900;
+    color: black;
+}
 .footer-third-right{
     display: flex;
 }
