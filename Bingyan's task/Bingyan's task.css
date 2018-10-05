@@ -279,3 +279,12 @@ background: rgb(0,0,0);
     content:url("file/Prompt box.png");
     position: absolute;
 }
+.body-main-content-para {
+    display: flex;
+    margin: 20px 20px 0 20px;
+    background: white;
+}
+.body-main-content-para div{
+    display: flex;
+    flex-direction: column;
+}
