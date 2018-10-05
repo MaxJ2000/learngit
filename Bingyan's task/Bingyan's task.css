@@ -281,10 +281,56 @@ background: rgb(0,0,0);
 }
 .body-main-content-para {
     display: flex;
-    margin: 20px 20px 0 20px;
+    margin: 20px 20px 20px 20px;
+    flex-direction: column;
+}
+.body-main-content-para >div{
+    display: flex;
+    margin: 0 0 20px 0;
     background: white;
 }
-.body-main-content-para div{
+.body-main-content-para-left{
     display: flex;
     flex-direction: column;
+    flex:1;
+}
+.body-main-content-para-right{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+}
+.body-main-content-para a{
+    background: rgb(145,176,237);
+    color:white;
+    flex:0 0 30px;
+    width: 25%;
+    margin: 10px auto 20px 20px;
+    font-size:20px;
+    text-align: center;/*垂直咋居中忘记了otz*/
+}
+.body-main-content-para p{
+    margin: 5px auto 5px 10px;
+    font-size: 15px;
+}
+.body-main-content-para h1{
+    margin: 10px;
+    font-size: 25px;
+}
+.replace{
+    width: 41px;
+    height: 42px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+.replace button{
+    padding: 0;
+    background-image: url("file/back to top-white.png");
+    background-size: 42px;
+    width: 41px;
+    height: 42px;
+}
+.replace button:hover{
+    background-image: url("file/back tot top-blue.png");
+    background-size: 42px;
 }
