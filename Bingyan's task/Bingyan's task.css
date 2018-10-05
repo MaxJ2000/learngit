@@ -18,19 +18,16 @@ a:hover ,a:active{
 .header,.footer{
     display: flex;
     flex-direction: row;
-    flex:0
 }
+.body{
+     display: flex;
+     flex-direction: row;
+     flex:1;
+ }
 .header{
     margin: 10px;
 }
-.body{
-    display: flex;
-    flex-direction: row;
-    flex:1;
-    margin: 0;
-    padding:0;
-    border: 0;
-}
+
 .left {
     flex:0 0 95px;
 }
@@ -47,7 +44,6 @@ a:hover ,a:active{
 }
 .header-hyperlink a{
     font-size: 40px;
-    text-decoration: none;
     color: black;
 }
 .header-search{
@@ -58,7 +54,6 @@ height: 40px;
     height:40px;
     background-image: url("file/search-button.png");
     background-size: 55px;
-    padding: 0;
     border: black;
     vertical-align: middle;/*让搜索图标和input对齐*/
 }
@@ -83,17 +78,16 @@ height: 40px;
 }
 .body-main-top{
     background: url("file/body-main.png") repeat-x;
-    height: 170px;
-    flex:none;
+    height: auto;
+    padding: 30px;
     color: white;
 }
 .body-main-top h2{
-    margin: 30px auto 0 30px;
     font-size: 60px;
 }
 .body-main-top p{
     font-size:20px;
-    margin-left: 30px;
+    padding-left: 30px;
 }
 .body-news{
     background: RGB(95,95,95);
@@ -128,14 +122,13 @@ button:hover,button:active{
 }
 .footer-first,.footer-second,.footer-third{
     display: flex;
-    flex-direction: row;
 }
 .footer-third-left,.footer-third-center,.footer-third-right{
     display: flex;
     flex-direction: column;
 }
 .footer-first{
-    height: 120px;
+    flex:0 0 120px;
 }
 .footer-first-left{
     background: RGB(44,44,44);
@@ -144,6 +137,7 @@ button:hover,button:active{
     background: RGB(57,57,57);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer-first-center img{
     height: 60px;
@@ -154,14 +148,14 @@ button:hover,button:active{
     margin-top: auto;
     margin-bottom: auto;
     height: 40px;
-    width: 250px;
+    width: 200px;
     background:white url("file/e-mail.png") no-repeat;
     background-size: 50px;
     font-size: 25px;
-    padding-left: 50px;
+    padding-left: 50px;/*让光标不重合在邮件图标上*/
 }
 .footer-first-center button{
-    margin: auto 50px auto 20px;/*还是搞不懂margin是啥，为什么能这么玩*/
+    margin:auto 30px;/*还是搞不懂margin是啥，为什么能这么玩*/
     font-size: 18px;
     height: 40px;
     width: 120px;
@@ -170,16 +164,16 @@ button:hover,button:active{
     vertical-align: middle;
 }
 .footer-first-right{
-    display: flex;
     background: RGB(167,167,167);
+    align-items: center;
+    display: flex;
 }
 .footer-first-right p{
-    margin: auto 20px;
-    height: 70px;/*做的不够好，强行凑出来的*/
-    font-weight: lighter;
+    width: 70%;
+    margin: auto;
 }
 .footer-second{
-    height: 90px;
+    flex:0 0 90px
 }
 .footer-second-left{
     background:RGB(24,24,24) ;
@@ -187,15 +181,17 @@ button:hover,button:active{
 .footer-second-center{
 background: rgb(0,0,0);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+
 }
 .footer-second-center  a{
-    margin: auto 50px auto auto;
+    margin:auto 50px auto auto;
     width: 450px;
 }
 .footer-second-right{
     background: rgb(42,42,42);
     display: flex;
+    align-items: center;
 }
 .footer-second-right a{
     color: white;
@@ -204,9 +200,6 @@ background: rgb(0,0,0);
 }
 .footer-second-right a strong{
     color: rgb(227,151,22);
-}
-.footer-third{
-   height:389px;
 }
 .footer-third-left img{
     width:95px;
@@ -235,7 +228,7 @@ background: rgb(0,0,0);
     color: rgb(54,54,54);
 }
 .adv{
-    height:150px;
+    flex:0 0 150;
     color: rgb(54,54,54);
     background: rgb(190,190,190);
     font-size: 25px;
@@ -269,7 +262,7 @@ background: rgb(0,0,0);
     display: flex;
 }
 .button-wrap a{
-    margin: 5px auto 0 20px;/*这一段margin效果感觉很奇怪*/
+    margin: 5px auto auto 20px;/*这一段margin效果感觉很奇怪*/
     width: 200px;
     display: block;/*我个智障，行内元素不能设置高度*/
     text-align: center;
@@ -282,15 +275,7 @@ background: rgb(0,0,0);
 .button-wrap a:hover{
     background: black;
 }
-.absolutely{
-    position:absolute;
-    left:85px;
-    bottom: -1080px;
-    display: none;
-}/*配数字出来的，我也不懂为什么是这样*/
-.absolutely img{
-    width: 35%;
+.Prompt :hover::after{
+    content:url("file/Prompt box.png");
+    position: absolute;
 }
-.footer-contact-link:hover .absolutely{
-    display: block;
-}/*奥义，不用动画直接absolute定位怼脸上法*/
