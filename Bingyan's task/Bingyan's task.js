@@ -6,7 +6,7 @@ function smoothscroll() {
     }
 }
 
-var back_to_top = "<button type='button' id='back-to-top' onclick='smoothscroll()'></button>";
+var back_to_top = "<button type='button' id='back-to-top' onclick='smoothscroll()'/>";
 document.getElementsByClassName("replace").innerHTML = back_to_top;
 
 var para = document.getElementById("body-main-content");
@@ -16,14 +16,14 @@ para.className = "body-main-content-para";
 
 
 $.ajax({
-    url: "https://rabbitchat.herokuapp.com/play.json",
+    url: "http://127.0.0.1:23333/",
     type: "get",
     dataType: 'json',
     success: function (result) {
         console.log(result);
         showresult(result);
     }
-})
+});
     function showresult(result){
         var para1 = document.createElement("div");//这里能用循环语句命名么，真的很想循环一下
         var para1_left = document.createElement("div");
