@@ -1,336 +1,410 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
     border: 0 none;
     list-style: none outside none;
-    text-decoration:none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
-a:link ,a:visited{
+
+a:link, a:visited {
     color: black;
 }
-a:hover ,a:active{
+
+a:hover, a:active {
     color: skyblue;
 }
-.flex-container{
+
+.flex-container {
     display: flex;
     flex-direction: column;
 }
-.header,.footer{
+
+.header, .footer {
     display: flex;
     flex-direction: row;
 }
-.body{
-     display: flex;
-     flex-direction: row;
-     flex:1;
- }
-.header{
+
+.body {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.header {
     margin: 10px;
 }
 
 .left {
-    flex:0 0 95px;
+    flex: 0 0 95px;
 }
-.right{
- flex:0 0 350px;
+
+.right {
+    flex: 0 0 350px;
 }
-.center{
-    flex:1
+
+.center {
+    flex: 1
 }
-.header-icon img{
-    width: 40px;
-    height:40px;
+
+.header-icon img {
+    height: 40px;
     margin: 6px 20px 0 20px;
+    width: 40px;
 }
-.header-hyperlink a{
-    font-size: 40px;
+
+.header-hyperlink a {
     color: black;
+    font-size: 40px;
 }
-.header-search{
-height: 40px;
+
+.header-search {
+    height: 40px;
 }
-.button{
-   width: 60px;
-    height:40px;
+
+.button {
     background-image: url("file/search-button.png");
     background-size: 55px;
     border: black;
-    vertical-align: middle;/*让搜索图标和input对齐*/
+    height: 40px;
+    vertical-align: middle; /*让搜索图标和input对齐*/
+    width: 60px;
 }
-.segmentation{
+
+.segmentation {
+    background: RGB(227, 151, 22);
     height: 10px;
-    background: RGB(227,151,22);
 }
+
 .body-nav img {
-    width: 95px;
     display: inline;
+    width: 95px;
 }
-.body-nav{
-    background: RGB(24,24,24);
+
+.body-nav {
+    background: RGB(24, 24, 24);
 }
-.left ul{
-    font-size: 0;/*去掉导航栏的空格*/
+
+.left ul {
+    font-size: 0; /*去掉导航栏的空格*/
 }
-.body-main{
-    background: rgb(41,41,42);
+
+.body-main {
+    background: rgb(41, 41, 42);
     display: flex;
     flex-direction: column;
 }
-.body-main-top{
+
+.body-main-top {
     background: url("file/body-main.png") repeat-x;
+    color: white;
     height: auto;
     padding: 30px;
-    color: white;
 }
-.body-main-top h2{
+
+.body-main-top h2 {
     font-size: 60px;
 }
-.body-main-top p{
-    font-size:20px;
+
+.body-main-top p {
+    font-size: 20px;
     padding-left: 30px;
 }
-.body-news{
-    background: RGB(95,95,95);
+
+.body-news {
+    background: RGB(95, 95, 95);
 }
-.body-news div{
-    margin: 20px;
+
+.body-news div {
     background: white;
-    padding:20px;
+    margin: 20px;
+    padding: 20px;
 }
-.body-news div h3{
+
+.body-news div h3 {
     font-size: 28px;
     font-weight: 900;
 }
-.body-news div p{
-    font-size:14px;
-    font-weight: lighter;
+
+.body-news div p {
     color: black;
+    font-size: 14px;
+    font-weight: lighter;
 }
-.body-news button{
+
+.body-news button {
+    background: RGB(145, 176, 237);
+    color: white;
+    height: 30px;
     margin: 10px;
     width: 150px;
-    height: 30px;
-    color: white;
-    background: RGB(145,176,237);
 }
-button:hover,button:active{
+
+button:hover, button:active {
     background: black;
 }
+
 .footer {
     display: flex;
     flex-direction: column;
 }
-.footer-first,.footer-second,.footer-third{
+
+.footer-first, .footer-second, .footer-third {
     display: flex;
 }
-.footer-third-left,.footer-third-center,.footer-third-right{
+
+.footer-third-left, .footer-third-center, .footer-third-right {
     display: flex;
     flex-direction: column;
 }
-.footer-first{
-    flex:0 0 120px;
+
+.footer-first {
+    flex: 0 0 120px;
 }
-.footer-first-left{
-    background: RGB(44,44,44);
+
+.footer-first-left {
+    background: RGB(44, 44, 44);
 }
-.footer-first-center{
-    background: RGB(57,57,57);
+
+.footer-first-center {
+    align-items: center;
+    background: RGB(57, 57, 57);
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-.footer-first-center img{
+
+.footer-first-center img {
     height: 60px;
-    padding: auto;
     margin: auto auto auto 30px;
+    padding: auto;
 }
-.footer-first-center input{
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 40px;
-    width: 200px;
-    background:white url("file/e-mail.png") no-repeat;
+
+.footer-first-center input {
+    background: white url("file/e-mail.png") no-repeat;
     background-size: 50px;
     font-size: 25px;
-    padding-left: 50px;/*让光标不重合在邮件图标上*/
+    height: 40px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 50px; /*让光标不重合在邮件图标上*/
+    width: 200px;
 }
-.footer-first-center button{
-    margin:auto 30px;/*还是搞不懂margin是啥，为什么能这么玩*/
+
+.footer-first-center button {
+    background: RGB(145, 176, 237);
+    color: white;
     font-size: 18px;
     height: 40px;
-    width: 120px;
-    background: RGB(145,176,237);
-    color: white;
+    margin: auto 30px; /*还是搞不懂margin是啥，为什么能这么玩*/
     vertical-align: middle;
+    width: 120px;
 }
-.footer-first-right{
-    background: RGB(167,167,167);
+
+.footer-first-right {
     align-items: center;
+    background: RGB(167, 167, 167);
     display: flex;
 }
-.footer-first-right p{
-    width: 70%;
+
+.footer-first-right p {
     margin: auto;
+    width: 70%;
 }
-.footer-second{
-    flex:0 0 90px
+
+.footer-second {
+    flex: 0 0 90px
 }
-.footer-second-left{
-    background:RGB(24,24,24) ;
+
+.footer-second-left {
+    background: RGB(24, 24, 24);
 }
-.footer-second-center{
-background: rgb(0,0,0);
-    display: flex;
+
+.footer-second-center {
     align-items: center;
+    background: rgb(0, 0, 0);
+    display: flex;
 
 }
-.footer-second-center  a{
-    margin:auto 50px auto auto;
+
+.footer-second-center a {
+    margin: auto 50px auto auto;
     width: 450px;
 }
-.footer-second-right{
-    background: rgb(42,42,42);
-    display: flex;
+
+.footer-second-right {
     align-items: center;
+    background: rgb(42, 42, 42);
+    display: flex;
 }
-.footer-second-right a{
+
+.footer-second-right a {
     color: white;
     font-weight: lighter;
-    margin:auto 20px;
+    margin: auto 20px;
 }
-.footer-second-right a strong{
-    color: rgb(227,151,22);
+
+.footer-second-right a strong {
+    color: rgb(227, 151, 22);
 }
-.footer-third-left img{
-    width:95px;
+
+.footer-third-left img {
+    width: 95px;
 }
-.footer-third-center{
+
+.footer-third-center {
     display: flex;
 }
-.sponsor{
-    background: rgb(212,212,212);
+
+.sponsor {
+    background: rgb(212, 212, 212);
     flex: 1;
 }
-.sponsor p{
-    padding: 35px 200px 0 40px;
+
+.sponsor p {
     font-weight: lighter;
+    padding: 35px 200px 0 40px;
 }
-.sponsor p a{
+
+.sponsor p a {
     font-weight: bolder;
 }
-.sponsor >a{
+
+.sponsor > a {
     padding: 35px 200px 0 40px;
 }
-.sponsor >a:link,.sponsor >a:visited{
-    color: rgb(103,169,242);
+
+.sponsor > a:link, .sponsor > a:visited {
+    color: rgb(103, 169, 242);
 }
-.sponsor >a:hover{
-    color: rgb(54,54,54);
+
+.sponsor > a:hover {
+    color: rgb(54, 54, 54);
 }
-.adv{
-    flex:0 0 150;
-    color: rgb(54,54,54);
-    background: rgb(190,190,190);
-    font-size: 25px;
+
+.adv {
+    background: rgb(190, 190, 190);
+    color: rgb(54, 54, 54);
     display: flex;
+    flex: 0 0 150;
     flex-wrap: wrap;
+    font-size: 25px;
 }
-.sponsor p a:link{
-    color: rgb(86,86,86);
+
+.sponsor p a:link {
+    color: rgb(86, 86, 86);
     font-weight: bold;
 }
+
 /*什么时候导航栏用ul，什么时候直接div啊啊啊啊啊，搞不懂*/
-.adv a:hover,.adv a:active,.sponsor p a:hover{
-    font-weight: 900;
+.adv a:hover, .adv a:active, .sponsor p a:hover {
     color: black;
+    font-weight: 900;
 }
-.adv div{
-    width: 30%;
+
+.adv div {
     margin: 10px auto 5px 10px;
+    width: 30%;
 }
-.footer-third-right{
+
+.footer-third-right {
     display: flex;
 }
-.footer-third-right h4{
+
+.footer-third-right h4 {
     margin: 20px auto 20px 20px;
 }
-.footer-third-right ul{
-    margin: 0 60px 20px 20px;
+
+.footer-third-right ul {
     font-size: 90%;
+    margin: 0 60px 20px 20px;
 }
-.footer-third-right{
+
+.footer-third-right {
     display: flex;
 }
-.button-wrap a{
-    margin: 5px auto auto 20px;/*这一段margin效果感觉很奇怪*/
-    width: 200px;
-    display: block;/*我个智障，行内元素不能设置高度*/
-    text-align: center;
-    height: 25px;
+
+.button-wrap a {
     color: white;
+    display: block; /*我个智障，行内元素不能设置高度*/
+    height: 25px;
+    margin: 5px auto auto 20px; /*这一段margin效果感觉很奇怪*/
+    text-align: center;
+    width: 200px;
 }
-.button-wrap a:link{
-    background: rgb(145,176,237);
+
+.button-wrap a:link {
+    background: rgb(145, 176, 237);
 }
-.button-wrap a:hover{
+
+.button-wrap a:hover {
     background: black;
 }
-.Prompt :hover::after{
-    content:url("file/Prompt box.png");
+
+.Prompt :hover::after {
+    content: url("file/Prompt box.png");
     position: absolute;
 }
+
 .body-main-content-para {
     display: flex;
-    margin: 20px 20px 20px 20px;
     flex-direction: column;
+    margin: 20px 20px 20px 20px;
 }
-.body-main-content-para >div{
+
+.body-main-content-para > div {
+    background: white;
     display: flex;
     margin: 0 0 20px 0;
-    background: white;
 }
-.body-main-content-para-left{
+
+.body-main-content-para-left {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    flex:1;
 }
-.body-main-content-para-right{
+
+.body-main-content-para-right {
     display: flex;
+    flex: 2;
     flex-direction: column;
-    flex:2;
 }
-.body-main-content-para a{
-    background: rgb(145,176,237);
-    color:white;
-    flex:0 0 30px;
-    width: 25%;
+
+.body-main-content-para a {
+    background: rgb(145, 176, 237);
+    color: white;
+    flex: 0 0 30px;
+    font-size: 20px;
     margin: 10px auto 20px 20px;
-    font-size:20px;
-    text-align: center;/*垂直咋居中忘记了otz*/
+    text-align: center; /*垂直咋居中忘记了otz*/
+    width: 25%;
 }
-.body-main-content-para p{
-    margin: 5px auto 5px 10px;
+
+.body-main-content-para p {
     font-size: 15px;
+    margin: 5px auto 5px 10px;
 }
-.body-main-content-para h1{
-    margin: 10px;
+
+.body-main-content-para h1 {
     font-size: 25px;
+    margin: 10px;
 }
-.replace{
-    width: 41px;
+
+.replace {
+    bottom: 100px;
     height: 42px;
     position: fixed;
-    bottom: 100px;
     right: 50px;
+    width: 41px;
 }
-.replace button{
-    padding: 0;
+
+.replace button {
     background-image: url("file/back to top-white.png");
     background-size: 42px;
-    width: 41px;
     height: 42px;
+    padding: 0;
+    width: 41px;
 }
-.replace button:hover{
+
+.replace button:hover {
     background-image: url("file/back tot top-blue.png");
     background-size: 42px;
 }
