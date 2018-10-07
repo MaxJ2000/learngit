@@ -43,7 +43,7 @@ a:hover, a:active {
 }
 
 .center {
-    flex: 1
+    flex: 1 0 500px;
 }
 
 .header-icon img {
@@ -73,6 +73,7 @@ a:hover, a:active {
 .segmentation {
     background: RGB(227, 151, 22);
     height: 10px;
+    flex:1;
 }
 
 .body-nav img {
@@ -173,7 +174,7 @@ button:hover, button:active {
 }
 
 .footer-first-center img {
-    height: 60px;
+    width:30%;
     margin: auto auto auto 30px;
     padding: auto;
 }
@@ -186,7 +187,7 @@ button:hover, button:active {
     margin-bottom: auto;
     margin-top: auto;
     padding-left: 50px; /*让光标不重合在邮件图标上*/
-    width: 200px;
+    width:25%;
 }
 
 .footer-first-center button {
