@@ -1,0 +1,3 @@
+﻿  源.cpp
+c:\users\iuiui\learngit\新建文件夹\meituan's task\meituan's task\源.cpp(65): warning C4477: “scanf”: 格式字符串“%c”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+  Meituan's task.vcxproj -> C:\Users\iuiui\learngit\新建文件夹\Meituan's task\Debug\Meituan's task.exe
