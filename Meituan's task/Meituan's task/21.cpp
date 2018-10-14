@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void chooseAnswer(int answer);
+void chooseAnswer(char answer);
 int getPoker(int poker[][52]);
 void intPoker(int poker[][52]);
 void displayPoker(int poker[][52],int playerPokernum,char PorM);
@@ -26,11 +26,14 @@ int main(void)
 	chooseAnswer(answer);
 		do {
 			playerPokernum = getPoker(poker);
-			makerPokernum = getPoker(poker);
 			displayPoker(poker, playerPokernum, 'P');
 			playerPokersum = displaySum(poker, playerPokernum, 'P', playerPokersum);
-			displayPoker(poker, makerPokernum, 'M');
-			makerPokersum = displaySum(poker, makerPokernum, 'M', makerPokersum);
+			if (playerPokersum > makerPokersum&makerPokersum < 17) 
+			{
+				makerPokernum = getPoker(poker);
+				displayPoker(poker, makerPokernum, 'M');
+				makerPokersum = displaySum(poker, makerPokernum, 'M', makerPokersum);
+			}
 			if (playerPokersum > 21)
 				boom('P');
 			if (makerPokersum > 21)
@@ -40,8 +43,22 @@ int main(void)
 			while (getchar() != '\n')
 				continue;
 		} while (wantContinue == 'y');
+		while (makerPokersum<=playerPokersum)
+		{
+			makerPokernum = getPoker(poker);
+			displayPoker(poker, makerPokernum, 'M');
+			makerPokersum = displaySum(poker, makerPokernum, 'M', makerPokersum);
+			if (makerPokersum > 21)boom('M');
+		}
+	if (playerPokersum > makerPokersum)
+		boom('M');
+	if (playerPokersum < makerPokersum)
+		boom('P');
+	if (playerPokersum ==makerPokersum)
+		printf("woc你们居然平局了2333");
+	return 0;
 }
-void chooseAnswer(int answer)
+void chooseAnswer(char answer)
 {
 	int answerWrong;
 	do
@@ -120,27 +137,31 @@ void displayPoker(int poker[][52], int playerPokernum, char PorM)
 }
 int displaySum(int poker[][52], int playerPokernum, char PorM,int sum)
 {
+	if (poker[0][playerPokernum] > 10)
+		sum += 10;
+	else
+		sum += poker[0][playerPokernum];
 	if (PorM == 'P')
 	{
-		printf("你的分数是%d",sum+=poker[0][playerPokernum]);
+		printf("你的分数是%d",sum);
 
 	}
 	if (PorM == 'M')
 	{
-		printf("庄家的分数是%d", sum += poker[0][playerPokernum]);
+		printf("庄家的分数是%d", sum);
 	}
 	printf("\n");
 	return sum;
 }
 void boom(char who)
 {
-	if (who='P')
+	if (who=='P')
 	{
 		printf("你输了，游戏结束");
 		getchar();
 		exit(0);
 	}
-	if (who='M')
+	if (who=='M')
 	{
 		printf("你打败了庄家，恭喜！");
 		getchar();
