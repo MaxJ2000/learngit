@@ -28,7 +28,7 @@ int main(void)
 			playerPokernum = getPoker(poker);
 			displayPoker(poker, playerPokernum, 'P');
 			playerPokersum = displaySum(poker, playerPokernum, 'P', playerPokersum);
-			if (playerPokersum > makerPokersum&makerPokersum < 17) 
+			if (playerPokersum > makerPokersum || makerPokersum < 17) 
 			{
 				makerPokernum = getPoker(poker);
 				displayPoker(poker, makerPokernum, 'M');
@@ -56,6 +56,7 @@ int main(void)
 		boom('P');
 	if (playerPokersum ==makerPokersum)
 		printf("woc你们居然平局了2333");
+
 	return 0;
 }
 void chooseAnswer(char answer)
