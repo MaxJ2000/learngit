@@ -14,7 +14,7 @@ a:hover, a:active {
     color: skyblue;
 }
 
-.flex-container {
+.flexContainer {
     display: flex;
     flex-direction: column;
 }
@@ -46,18 +46,18 @@ a:hover, a:active {
     flex: 1 0 500px;
 }
 
-.header-icon img {
+.headerIcon img {
     height: 40px;
     margin: 6px 20px 0 20px;
     width: 40px;
 }
 
-.header-hyperlink a {
+.headerHyperLink a {
     color: black;
     font-size: 40px;
 }
 
-.header-search {
+.headerSearch {
     height: 40px;
 }
 
@@ -76,12 +76,35 @@ a:hover, a:active {
     flex:1;
 }
 
-.body-nav img {
-    display: inline;
-    width: 95px;
+.bodyNav ul li a img{
+    width: 55px;
+    margin: 20px 20px 0 20px;
 }
-
-.body-nav {
+#videos{
+    width:95px;
+    margin:0;
+}
+.navP{
+    visibility: hidden;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.bodyNav:hover .navP{
+    visibility: visible;
+    animation-duration: 0.3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from{
+        transform: translateX(-80px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.bodyNav {
     background: RGB(24, 24, 24);
 }
 
@@ -89,50 +112,50 @@ a:hover, a:active {
     font-size: 0; /*去掉导航栏的空格*/
 }
 
-.body-main {
+.bodyMain {
     background: rgb(41, 41, 42);
     display: flex;
     flex-direction: column;
 }
 
-.body-main-top {
+.bodyMainTop {
     background: url("file/body-main.png") repeat-x;
     color: white;
     height: auto;
     padding: 30px;
 }
 
-.body-main-top h2 {
+.bodyMainTop h2 {
     font-size: 60px;
 }
 
-.body-main-top p {
+.bodyMainTop p {
     font-size: 20px;
     padding-left: 30px;
 }
 
-.body-news {
+.bodyNews {
     background: RGB(95, 95, 95);
 }
 
-.body-news div {
+.bodyNews div {
     background: white;
     margin: 20px;
     padding: 20px;
 }
 
-.body-news div h3 {
+.bodyNews div h3 {
     font-size: 28px;
     font-weight: 900;
 }
 
-.body-news div p {
+.bodyNews div p {
     color: black;
     font-size: 14px;
     font-weight: lighter;
 }
 
-.body-news button {
+.bodyNews button {
     background: RGB(145, 176, 237);
     color: white;
     height: 30px;
@@ -149,37 +172,37 @@ button:hover, button:active {
     flex-direction: column;
 }
 
-.footer-first, .footer-second, .footer-third {
+.footerFirst, .footerSecond, .footerThird {
     display: flex;
 }
 
-.footer-third-left, .footer-third-center, .footer-third-right {
+.footerThirdLeft, .footerThirdCenter, .footerThirdRight {
     display: flex;
     flex-direction: column;
 }
 
-.footer-first {
+.footerFirst {
     flex: 0 0 120px;
 }
 
-.footer-first-left {
+.footerFirstLeft {
     background: RGB(44, 44, 44);
 }
 
-.footer-first-center {
+.footerFirstCenter {
     align-items: center;
     background: RGB(57, 57, 57);
     display: flex;
     justify-content: space-between;
 }
 
-.footer-first-center img {
+.footerFirstCenter img {
     width:30%;
     margin: auto auto auto 30px;
     padding: auto;
 }
 
-.footer-first-center input {
+.footerFirstCenter input {
     background: white url("file/e-mail.png") no-repeat;
     background-size: 50px;
     font-size: 25px;
@@ -190,7 +213,7 @@ button:hover, button:active {
     width:25%;
 }
 
-.footer-first-center button {
+.footerFirstCenter button {
     background: RGB(145, 176, 237);
     color: white;
     font-size: 18px;
@@ -200,58 +223,58 @@ button:hover, button:active {
     width: 120px;
 }
 
-.footer-first-right {
+.footerFirstRight {
     align-items: center;
     background: RGB(167, 167, 167);
     display: flex;
 }
 
-.footer-first-right p {
+.footerFirstRight p {
     margin: auto;
     width: 70%;
 }
 
-.footer-second {
+.footerSecond {
     flex: 0 0 90px
 }
 
-.footer-second-left {
+.footerSecondLeft {
     background: RGB(24, 24, 24);
 }
 
-.footer-second-center {
+.footerSecondCenter {
     align-items: center;
     background: rgb(0, 0, 0);
     display: flex;
 
 }
 
-.footer-second-center a {
+.footerSecondCenter a {
     margin: auto 50px auto auto;
     width: 450px;
 }
 
-.footer-second-right {
+.footerSecondRight {
     align-items: center;
     background: rgb(42, 42, 42);
     display: flex;
 }
 
-.footer-second-right a {
+.footerSecondRight a {
     color: white;
     font-weight: lighter;
     margin: auto 20px;
 }
 
-.footer-second-right a strong {
+.footerSecondRight a strong {
     color: rgb(227, 151, 22);
 }
 
-.footer-third-left img {
+.footerThirdLeft img {
     width: 95px;
 }
 
-.footer-third-center {
+.footerThirdCenter {
     display: flex;
 }
 
@@ -306,24 +329,24 @@ button:hover, button:active {
     width: 30%;
 }
 
-.footer-third-right {
+.footerThirdRight {
     display: flex;
 }
 
-.footer-third-right h4 {
+.footerThirdRight h4 {
     margin: 20px auto 20px 20px;
 }
 
-.footer-third-right ul {
+.footerThirdRight ul {
     font-size: 90%;
     margin: 0 60px 20px 20px;
 }
 
-.footer-third-right {
+.footerThirdRight {
     display: flex;
 }
 
-.button-wrap a {
+.buttonWrap a {
     color: white;
     display: block; /*我个智障，行内元素不能设置高度*/
     height: 25px;
@@ -332,11 +355,11 @@ button:hover, button:active {
     width: 200px;
 }
 
-.button-wrap a:link {
+.buttonWrap a:link {
     background: rgb(145, 176, 237);
 }
 
-.button-wrap a:hover {
+.buttonWrap a:hover {
     background: black;
 }
 
@@ -345,31 +368,31 @@ button:hover, button:active {
     position: absolute;
 }
 
-.body-main-content-para {
+.bodyMainContentPara {
     display: flex;
     flex-direction: column;
     margin: 20px 20px 20px 20px;
 }
 
-.body-main-content-para > div {
+.bodyMainContentPara > div {
     background: white;
     display: flex;
     margin: 0 0 20px 0;
 }
 
-.body-main-content-para-left {
+.bodyMainContentParaLeft {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.body-main-content-para-right {
+.bodyMainContentParaRight {
     display: flex;
     flex: 2;
     flex-direction: column;
 }
 
-.body-main-content-para a {
+.bodyMainContentPara a {
     background: rgb(145, 176, 237);
     color: white;
     flex: 0 0 30px;
@@ -379,12 +402,12 @@ button:hover, button:active {
     width: 25%;
 }
 
-.body-main-content-para p {
+.bodyMainContentPara p {
     font-size: 15px;
     margin: 5px auto 5px 10px;
 }
 
-.body-main-content-para h1 {
+.bodyMainContentPara h1 {
     font-size: 25px;
     margin: 10px;
 }

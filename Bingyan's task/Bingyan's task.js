@@ -10,7 +10,7 @@ var back_to_top = "<button type='button' id='back-to-top' onclick='smoothscroll(
 document.getElementsByClassName("replace").innerHTML = back_to_top;
 
 var para = document.getElementById("body-main-content");
-para.className = "body-main-content-para";
+para.className = "bodyMainContentPara";
 
 
 
@@ -52,8 +52,8 @@ function showresult(result){
     para1.appendChild(para1_right);
     para.appendChild(para1);
 
-    para1_left.className = "body-main-content-para-left";
-    para1_right.className = "body-main-content-para-right";
+    para1_left.className = "bodyMainContentParaLeft";
+    para1_right.className = "bodyMainContentParaRight";
 
 
     var para2 = document.createElement("div");
@@ -83,8 +83,8 @@ function showresult(result){
     para2.appendChild(para2_right);
     para.appendChild(para2);
 
-    para2_left.className = "body-main-content-para-left";
-    para2_right.className = "body-main-content-para-right";
+    para2_left.className = "bodyMainContentParaLeft";
+    para2_right.className = "bodyMainContentParaRight";
 
 
     var para3 = document.createElement("div");
@@ -114,8 +114,8 @@ function showresult(result){
     para3.appendChild(para3_right);
     para.appendChild(para3);
 
-    para3_left.className = "body-main-content-para-left";
-    para3_right.className = "body-main-content-para-right";
+    para3_left.className = "bodyMainContentParaLeft";
+    para3_right.className = "bodyMainContentParaRight";
 
 
     var para4 = document.createElement("div");
@@ -145,11 +145,11 @@ function showresult(result){
     para4.appendChild(para4_right);
     para.appendChild(para4);
 
-    para4_left.className = "body-main-content-para-left";
-    para4_right.className = "body-main-content-para-right";
+    para4_left.className = "bodyMainContentParaLeft";
+    para4_right.className = "bodyMainContentParaRight";
 
 
-    var para5 = document.createElement("div");
+    var para7 = document.createElement("div");
     var para5_left = document.createElement("div");
     var para5_right = document.createElement("div");
 
@@ -176,7 +176,158 @@ function showresult(result){
     para5.appendChild(para5_right);
     para.appendChild(para5);
 
-    para5_left.className = "body-main-content-para-left";
-    para5_right.className = "body-main-content-para-right";
+    para5_left.className = "bodyMainContentParaLeft";
+    para5_right.className = "bodyMainContentParaRight";
+
+    var para6 = document.createElement("div");
+    var para6_left = document.createElement("div");
+    var para6_right = document.createElement("div");
+
+    var para6_right_h = document.createElement("h1");
+    var para6_right_p = document.createElement("p");
+    var para6_left_img = document.createElement("img");
+    var para6_left_a = document.createElement("a");
+
+    var text6_h = document.createTextNode(result.fifth.title);
+    var text6_p = document.createTextNode(result.fifth.content);
+    var text6_a = document.createTextNode("PLAY");
+    para6_left_img.src = "http://www.baidu.com/img/baidu_sylogo1.gif";
+    para6_left_a.href = "//www.baidu.com/";
+
+    para6_right_p.appendChild(text6_p);
+    para6_right_h.appendChild(text6_h);
+    para6_left_a.appendChild(text6_a);
+    para6_right.appendChild(para6_right_h);
+    para6_right.appendChild(para6_right_p);
+    para6_left.appendChild(para6_left_img);
+    para6_left.appendChild(para6_left_a);
+
+    para6.appendChild(para6_left);
+    para6.appendChild(para6_right);
+    para.appendChild(para6);
+
+    para6_left.className = "bodyMainContentParaLeft";
+    para6_right.className = "bodyMainContentParaRight";
+
+    var para7 = document.createElement("div");
+    var para7_left = document.createElement("div");
+    var para7_right = document.createElement("div");
+
+    var para7_right_h = document.createElement("h1");
+    var para7_right_p = document.createElement("p");
+    var para7_left_img = document.createElement("img");
+    var para7_left_a = document.createElement("a");
+
+    var text7_h = document.createTextNode(result.fifth.title);
+    var text7_p = document.createTextNode(result.fifth.content);
+    var text7_a = document.createTextNode("PLAY");
+    para7_left_img.src = "http://www.baidu.com/img/baidu_sylogo1.gif";
+    para7_left_a.href = "//www.baidu.com/";
+
+    para7_right_p.appendChild(text7_p);
+    para7_right_h.appendChild(text7_h);
+    para7_left_a.appendChild(text7_a);
+    para7_right.appendChild(para7_right_h);
+    para7_right.appendChild(para7_right_p);
+    para7_left.appendChild(para7_left_img);
+    para7_left.appendChild(para7_left_a);
+
+    para7.appendChild(para7_left);
+    para7.appendChild(para7_right);
+    para.appendChild(para7);
+
+    para7_left.className = "bodyMainContentParaLeft";
+    para7_right.className = "bodyMainContentParaRight";
+
+    var para8 = document.createElement("div");
+    var para8_left = document.createElement("div");
+    var para8_right = document.createElement("div");
+
+    var para8_right_h = document.createElement("h1");
+    var para8_right_p = document.createElement("p");
+    var para8_left_img = document.createElement("img");
+    var para8_left_a = document.createElement("a");
+
+    var text8_h = document.createTextNode(result.fifth.title);
+    var text8_p = document.createTextNode(result.fifth.content);
+    var text8_a = document.createTextNode("PLAY");
+    para8_left_img.src = "http://www.baidu.com/img/baidu_sylogo1.gif";
+    para8_left_a.href = "//www.baidu.com/";
+
+    para8_right_p.appendChild(text8_p);
+    para8_right_h.appendChild(text8_h);
+    para8_left_a.appendChild(text8_a);
+    para8_right.appendChild(para8_right_h);
+    para8_right.appendChild(para8_right_p);
+    para8_left.appendChild(para8_left_img);
+    para8_left.appendChild(para8_left_a);
+
+    para8.appendChild(para8_left);
+    para8.appendChild(para8_right);
+    para.appendChild(para8);
+
+    para8_left.className = "bodyMainContentParaLeft";
+    para8_right.className = "bodyMainContentParaRight";
+
+    var para9 = document.createElement("div");
+    var para9_left = document.createElement("div");
+    var para9_right = document.createElement("div");
+
+    var para9_right_h = document.createElement("h1");
+    var para9_right_p = document.createElement("p");
+    var para9_left_img = document.createElement("img");
+    var para9_left_a = document.createElement("a");
+
+    var text9_h = document.createTextNode(result.fifth.title);
+    var text9_p = document.createTextNode(result.fifth.content);
+    var text9_a = document.createTextNode("PLAY");
+    para9_left_img.src = "http://www.baidu.com/img/baidu_sylogo1.gif";
+    para9_left_a.href = "//www.baidu.com/";
+
+    para9_right_p.appendChild(text9_p);
+    para9_right_h.appendChild(text9_h);
+    para9_left_a.appendChild(text9_a);
+    para9_right.appendChild(para9_right_h);
+    para9_right.appendChild(para9_right_p);
+    para9_left.appendChild(para9_left_img);
+    para9_left.appendChild(para9_left_a);
+
+    para9.appendChild(para9_left);
+    para9.appendChild(para9_right);
+    para.appendChild(para9);
+
+    para9_left.className = "bodyMainContentParaLeft";
+    para9_right.className = "bodyMainContentParaRight";
+
+
+    var para10 = document.createElement("div");
+    var para10_left = document.createElement("div");
+    var para10_right = document.createElement("div");
+
+    var para10_right_h = document.createElement("h1");
+    var para10_right_p = document.createElement("p");
+    var para10_left_img = document.createElement("img");
+    var para10_left_a = document.createElement("a");
+
+    var text10_h = document.createTextNode(result.fifth.title);
+    var text10_p = document.createTextNode(result.fifth.content);
+    var text10_a = document.createTextNode("PLAY");
+    para10_left_img.src = "http://www.baidu.com/img/baidu_sylogo1.gif";
+    para10_left_a.href = "//www.baidu.com/";
+
+    para10_right_p.appendChild(text10_p);
+    para10_right_h.appendChild(text10_h);
+    para10_left_a.appendChild(text10_a);
+    para10_right.appendChild(para10_right_h);
+    para10_right.appendChild(para10_right_p);
+    para10_left.appendChild(para10_left_img);
+    para10_left.appendChild(para10_left_a);
+
+    para10.appendChild(para10_left);
+    para10.appendChild(para10_right);
+    para.appendChild(para10);
+
+    para10_left.className = "bodyMainContentParaLeft";
+    para10_right.className = "bodyMainContentParaRight";
 }
 
